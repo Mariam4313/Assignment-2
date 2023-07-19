@@ -145,14 +145,13 @@ border: none;
   
 
 }
-/* Initial styles */
+
 .online-img .img-1 {
     gap: 20px;
     padding: 5px;
     position: relative;
   }
   
-  /* Black overlay styles */
   .online-img .img-1::before {
     content: '';
     position: absolute;
@@ -165,20 +164,20 @@ border: none;
     transition: opacity 0.3s;
   }
   
-  /* Hover styles */
+  
   .online-img .img-1:hover::before {
     opacity: 1;
   }
   
-  /* Icon styles */
+ 
   .online-img .img-1 .icon {
     position: absolute;
-    top: 50%; /* Adjust the icon's position */
-    left: 50%; /* Adjust the icon's position */
-    transform: translate(-50%, -50%); /* Center the icon */
-    color: #fff; /* Set the color of the icon */
-    font-size: 24px; /* Adjust the size of the icon */
-    z-index: 1; /* Ensure the icon is above the black overlay */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    font-size: 24px; 
+    z-index: 1; 
   }
 .online-img .img-1 img{
    
@@ -187,6 +186,10 @@ height: 200px;
 gap: 20px;
 padding: 5px;
 
+}
+.online-img .img-1 .icon{
+    width: 20px;
+    height: 20px;
 }
 .online-game-content{
 text-align: center;
