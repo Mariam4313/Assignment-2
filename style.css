@@ -85,7 +85,7 @@ color: #FFF;
 .gamer-img img{
     width: 500px;
 height: 600px;
-flex-shrink: 0;
+
 }
 .game-content h3{
    
@@ -114,14 +114,120 @@ font-weight: 400;
 line-height: 30px;
 }
 .game-btn{
-    display: inline-flex;
+   
 padding: 21px 40px;
-align-items: flex-start;
+
 gap: 10px;
 border-radius: 48px;
 background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
 color: #FFF;
 border: none;
 }
+.online-game{
+   
+}
+.online-img {
+    display: flex;
+  
 
+}
+.online-img .img-1{
+   gap: 20px;
+padding: 5px;
+
+z-index: -10px;
+
+}
+.online-img .img-1 img:hover{
+   gap: 20px;
+padding: 5px;
+background-color: #0B0223;
+z-index: 1px;
+
+}
+.online-img .img-1 img{
+   
+width: 250px;
+height: 200px;
+gap: 20px;
+padding: 5px;
+
+}
+.online-game-content{
+text-align: center;
+}
+.online-game-content p{
+text-align: center;
+color: #534C64;
+}
+.online-game-content h2 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.play{
+    display: flex;
+}
+.play-content{
+    text-align: center;
     
+}
+.play-content h3 span{
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; 
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+color: #0B0223;
+font-family: Work Sans;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+}
+.play-content p{
+    color: #534C64;
+text-align: right;
+font-family: Work Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; 
+}
+.play-img-1{
+    position: relative;
+}
+.play-img-2{
+    position: absolute;
+}
+.feature{
+    margin-top: 50px;
+
+}
+.feature-img-1 {
+    display: flex;
+}
+.feature-img-2 {
+    display: flex;
+}
+.ft-img-5{
+    display: flex;
+    padding: 5px;
+   
+    margin: 10px;
+}
+.ft-img-5:hover{
+    border: 1px solid black;
+    border-radius: 30%;
+}
