@@ -16,6 +16,20 @@
     padding-left: 10px;
    list-style:none ;
 }
+.header-content li img{
+width: 20px;
+height: 20px;
+}
+.flex{
+    display: flex;
+   
+}
+.flex img{
+width: 20px;
+height: 20px;
+padding-top: 10px;
+padding-right: 5px;
+}
 .logo{
     display: flex;
 }
@@ -131,20 +145,41 @@ border: none;
   
 
 }
-.online-img .img-1{
-   gap: 20px;
-padding: 5px;
-
-z-index: -10px;
-
-}
-.online-img .img-1 img:hover{
-   gap: 20px;
-padding: 5px;
-background-color: #0B0223;
-z-index: 1px;
-
-}
+/* Initial styles */
+.online-img .img-1 {
+    gap: 20px;
+    padding: 5px;
+    position: relative;
+  }
+  
+  /* Black overlay styles */
+  .online-img .img-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Hover styles */
+  .online-img .img-1:hover::before {
+    opacity: 1;
+  }
+  
+  /* Icon styles */
+  .online-img .img-1 .icon {
+    position: absolute;
+    top: 50%; /* Adjust the icon's position */
+    left: 50%; /* Adjust the icon's position */
+    transform: translate(-50%, -50%); /* Center the icon */
+    color: #fff; /* Set the color of the icon */
+    font-size: 24px; /* Adjust the size of the icon */
+    z-index: 1; /* Ensure the icon is above the black overlay */
+  }
 .online-img .img-1 img{
    
 width: 250px;
@@ -210,9 +245,11 @@ line-height: 30px;
 }
 .play-img-2{
     position: absolute;
+    top: 60%;
+    right: 60%;
 }
 .feature{
-    margin-top: 50px;
+    margin-top: 250px;
 
 }
 .feature-img-1 {
@@ -230,4 +267,52 @@ line-height: 30px;
 .ft-img-5:hover{
     border: 1px solid black;
     border-radius: 30%;
+}
+.footer-logo{
+    display: flex;
+    margin:  0 auto;
+    justify-content: center;
+    
+}
+
+.footer-logo h3 span{
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.footer-logo img{
+    width: 70px;
+  
+    align-items: center;
+}
+.footer-des{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-icon{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 50px;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+}
+.footer{
+    padding: 50px;
+    background-color: #589394;
+    color: #FFF;
 }
